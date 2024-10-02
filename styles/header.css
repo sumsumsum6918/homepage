@@ -2,6 +2,8 @@ header {
   display: flex;
   justify-content: space-between;
   padding-left: 50px;
+  position: relative;
+  z-index: 10;
 }
 nav {
   display: flex;
@@ -13,7 +15,7 @@ nav {
   border-radius: 50%;
   border: 5px solid rgb(231, 236, 239);
 }
-i {
+.icons-icon {
   font-size: 32px;
   color: rgb(231, 236, 239, 0.8);
   height: 60px;
@@ -21,16 +23,36 @@ i {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-color 0.3s;
-}
-i:hover {
-  background-color: rgba(203, 118, 158, 0.7);
+  transition: background-color border-radius 0.3s;
   border-radius: 50%;
 }
-i:active {
+.icons-icon:hover {
+  background-color: rgba(203, 118, 158, 0.7);
+}
+.icons-icon:active {
   background-color: rgb(39, 41, 50);
 }
 .icons-link {
   text-decoration: none;
   margin-left: 30px;
+  height: 60px;
+}
+.menu-button {
+  display: none;
+}
+.menu-icon {
+  font-size: 50px;
+  color: rgb(231, 236, 239, 0.8);
+}
+@media only screen and (max-width: 768px) {
+  .profile-picture {
+    display: none;
+  }
+  .icons-link {
+    display: none;
+  }
+
+  .menu-button {
+    display: contents;
+  }
 }

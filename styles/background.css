@@ -3,12 +3,13 @@
   padding: 0;
 }
 html {
-  height: 100%;
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 body {
+  height: 100%;
   background-color: rgb(39, 41, 50);
   color: rgb(231, 236, 239);
   position: relative;
@@ -45,9 +46,30 @@ body {
   z-index: 0;
 }
 
-.container {
-  padding: 60px 90px 20px 90px;
+.content-container {
+  padding: 60px 90px 60px 90px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+}
+
+@media only screen and (max-width: 768px) {
+  .background-deco {
+    width: 100px;
+    height: 200px;
+    border-width: 4px;
+    position: fixed;
+  }
+  .top-left {
+    left: 20px;
+  }
+  .bottom-right {
+    right: 20px;
+  }
+  .content-container {
+    padding: 30px;
+  }
+  .list-deco {
+    width: 60px;
+    height: 30px;
+  }
 }

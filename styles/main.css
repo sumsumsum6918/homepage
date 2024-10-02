@@ -1,6 +1,8 @@
 main {
   display: flex;
   height: 100%;
+  position: relative;
+  z-index: 10;
 }
 
 .my-info-container {
@@ -58,11 +60,46 @@ li {
   white-space: nowrap;
   padding: 10px 16px;
   transition: background-color 0.3s;
+  border-radius: 30px;
 }
 .project-link:hover {
   background-color: rgba(203, 118, 158, 0.7);
-  border-radius: 30px;
 }
 .project-link:active {
   background-color: rgb(39, 41, 50);
+}
+.main-contiainer {
+  height: 100%;
+}
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 87.5%;
+  }
+  main {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .title {
+    margin-top: 30px;
+  }
+  .my-info-container {
+    margin: 0;
+    width: 100%;
+  }
+  .my-info {
+    border-left: none;
+    border-top: 4px solid #cb769e;
+    padding: 0;
+    margin: 0 20px;
+    padding-top: 20px;
+  }
+  .subtitle {
+    margin-bottom: 16px;
+  }
+  .main-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
