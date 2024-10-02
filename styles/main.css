@@ -1,0 +1,64 @@
+.container {
+  padding: 60px 90px;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  height: 100%;
+}
+
+.my-info-container {
+  width: 70%;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.projects-contianer {
+  width: 30%;
+  padding-left: 20px;
+  position: relative;
+}
+
+.title {
+  font-size: 3rem;
+  line-height: 4rem;
+  margin-bottom: 20px;
+  padding-left: 25px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.my-info {
+  padding-left: 15px;
+  font-size: 1rem;
+  line-height: 2rem;
+  border-left: 4px solid #cb769e;
+  padding-right: 60px;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 25px;
+}
+li {
+  margin-bottom: 40px;
+}
+.list-container {
+  position: absolute;
+  border-left: 4px solid #cb769e;
+  border-top: 4px solid #cb769e;
+  border-top-left-radius: 10px;
+  width: 80px;
+  height: 100px;
+}

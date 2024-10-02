@@ -1,0 +1,17 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+}
+.profile-picture {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid rgb(231, 236, 239);
+}
+i {
+  font-size: 40px;
+  margin-left: 50px;
+  color: rgb(231, 236, 239, 0.8);
+}
