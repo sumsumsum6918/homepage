@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
 }
+:root {
+  --background-black: rgb(39, 41, 50);
+  --white: rgb(231, 236, 239);
+  --pink: rgb(203, 118, 158);
+}
 html {
   margin: 0;
   padding: 0;
@@ -10,8 +15,8 @@ html {
 
 body {
   height: 100%;
-  background-color: rgb(39, 41, 50);
-  color: rgb(231, 236, 239);
+  background-color: var(--background-black);
+  color: var(--white);
   position: relative;
   height: 100vh;
   margin: 0;
@@ -23,23 +28,23 @@ body {
   height: 400px;
 }
 .top-left {
-  border-top: 10px solid #cb769e;
-  border-left: 10px solid #cb769e;
+  border-top: 10px solid --pink;
+  border-left: 10px solid --pink;
   border-top-left-radius: 10px;
   top: 10px;
   left: 50px;
 }
 .bottom-right {
-  border-bottom: 10px solid #cb769e;
-  border-right: 10px solid #cb769e;
+  border-bottom: 10px solid --pink;
+  border-right: 10px solid --pink;
   border-bottom-right-radius: 10px;
   bottom: 10px;
   right: 50px;
 }
 .list-deco {
   position: absolute;
-  border-left: 4px solid #cb769e;
-  border-top: 4px solid #cb769e;
+  border-left: 4px solid --pink;
+  border-top: 4px solid --pink;
   border-top-left-radius: 10px;
   width: 80px;
   height: 100px;

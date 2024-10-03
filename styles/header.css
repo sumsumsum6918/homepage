@@ -1,3 +1,8 @@
+:root {
+  --background-black: rgb(39, 41, 50);
+  --white: rgb(231, 236, 239);
+  --pink: rgb(203, 118, 158);
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -13,7 +18,7 @@ nav {
   height: 160px;
   object-fit: cover;
   border-radius: 50%;
-  border: 5px solid rgb(231, 236, 239);
+  border: 5px solid --white;
 }
 .icons-icon {
   font-size: 32px;
@@ -30,7 +35,7 @@ nav {
   background-color: rgba(203, 118, 158, 0.7);
 }
 .icons-icon:active {
-  background-color: rgb(39, 41, 50);
+  background-color: var(--background-black);
 }
 .icons-link {
   text-decoration: none;
@@ -59,32 +64,47 @@ nav {
     width: 100px;
     height: 100px;
   }
+  #inner-menu-icon {
+    font-size: 40px;
+  }
   .menu-button {
+    background-color: var(--background-black);
+    transition: background-color 0.15s;
+  }
+  .inner-menu-button {
+    background-color: transparent;
+  }
+
+  .menu-button,
+  .inner-menu-button {
     border: none;
-    background-color: rgb(39, 41, 50);
     width: 60px;
     height: 60px;
     border-radius: 50%;
     display: block;
     cursor: pointer;
-    transition: background-color 0.15s;
   }
   .menu-button:hover {
-    background-color: #cb769e;
+    background-color: var(--pink);
   }
-  .menu-dropdown {
+  .js-menu-dropdown-open {
     position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
     width: 60vw;
-    padding: 40px;
+    padding: 30px;
     background-color: rgba(203, 118, 158, 0.95);
     z-index: 400;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: end;
-    row-gap: 30px;
+  }
+  .menu-bottom-comtainer {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    row-gap: 20px;
   }
 }
