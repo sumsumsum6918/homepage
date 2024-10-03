@@ -44,15 +44,47 @@ nav {
   font-size: 50px;
   color: rgb(231, 236, 239, 0.8);
 }
+.menu-dropdown {
+  display: none;
+}
 @media only screen and (max-width: 768px) {
-  .profile-picture {
-    display: none;
-  }
-  .icons-link {
+  header .profile-picture {
     display: none;
   }
 
+  nav .icons-link {
+    display: none;
+  }
+  .profile-picture {
+    width: 100px;
+    height: 100px;
+  }
   .menu-button {
-    display: contents;
+    border: none;
+    background-color: rgb(39, 41, 50);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: block;
+    cursor: pointer;
+    transition: background-color 0.15s;
+  }
+  .menu-button:hover {
+    background-color: #cb769e;
+  }
+  .menu-dropdown {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 60vw;
+    padding: 40px;
+    background-color: rgba(203, 118, 158, 0.95);
+    z-index: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    row-gap: 30px;
   }
 }
