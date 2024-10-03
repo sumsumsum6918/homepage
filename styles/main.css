@@ -64,11 +64,11 @@ li {
   color: var(--white);
   white-space: nowrap;
   padding: 10px 16px;
-  transition: background-color 0.3s;
+  transition: background-color 0.15s;
   border-radius: 30px;
 }
 .project-link:hover {
-  background-color: rgba(203, 118, 158, 0.7);
+  background-color: var(--pink);
 }
 .project-link:active {
   background-color: var(--background-black);
