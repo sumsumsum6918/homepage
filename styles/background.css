@@ -28,23 +28,23 @@ body {
   height: 400px;
 }
 .top-left {
-  border-top: 10px solid --pink;
-  border-left: 10px solid --pink;
+  border-top: 10px solid var(--pink);
+  border-left: 10px solid var(--pink);
   border-top-left-radius: 10px;
   top: 10px;
   left: 50px;
 }
 .bottom-right {
-  border-bottom: 10px solid --pink;
-  border-right: 10px solid --pink;
+  border-bottom: 10px solid var(--pink);
+  border-right: 10px solid var(--pink);
   border-bottom-right-radius: 10px;
   bottom: 10px;
   right: 50px;
 }
 .list-deco {
   position: absolute;
-  border-left: 4px solid --pink;
-  border-top: 4px solid --pink;
+  border-left: 4px solid var(--pink);
+  border-top: 4px solid var(--pink);
   border-top-left-radius: 10px;
   width: 80px;
   height: 100px;
