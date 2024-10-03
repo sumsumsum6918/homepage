@@ -64,15 +64,17 @@ nav {
     width: 100px;
     height: 100px;
   }
-  #inner-menu-icon {
-    font-size: 40px;
-  }
+
   .menu-button {
     background-color: var(--background-black);
     transition: background-color 0.15s;
   }
   .inner-menu-button {
     background-color: transparent;
+    transition: background-color 0.3s;
+  }
+  .inner-menu-button:hover {
+    background-color: rgba(39, 41, 50, 0.8);
   }
 
   .menu-button,
@@ -106,5 +108,11 @@ nav {
     flex-direction: column;
     align-items: end;
     row-gap: 20px;
+  }
+  .menu-bottom-comtainer .icons-icon {
+    transition: background-color 0.3s;
+  }
+  .menu-bottom-comtainer .icons-icon:hover {
+    background-color: rgba(39, 41, 50, 0.8);
   }
 }
