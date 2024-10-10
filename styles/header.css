@@ -90,7 +90,7 @@ nav {
     background-color: rgba(203, 118, 158, 0.8);
   }
   .js-menu-dropdown-open {
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     right: 0;
@@ -115,6 +115,4 @@ nav {
   .menu-bottom-comtainer .icons-icon:hover {
     background-color: rgba(39, 41, 50, 0.8);
   }
-}
-@media (min-width: 1201px) {
 }
