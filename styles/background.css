@@ -64,7 +64,7 @@ body {
 }
 
 .content-container {
-  padding: 60px 90px 60px 90px;
+  padding: 60px 90px;
   display: flex;
   flex-direction: column;
 }
@@ -83,7 +83,7 @@ body {
     right: 20px;
   }
   .content-container {
-    padding: 30px;
+    padding: 60px 30px;
   }
   .list-border {
     width: 60px;

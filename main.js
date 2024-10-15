@@ -1,11 +1,3 @@
-document.querySelector(".menu-button").addEventListener("click", () => {
-  openDropdownMenu();
-});
-
-document.querySelector(".inner-menu-button").addEventListener("click", () => {
-  closeDropdownMenu();
-});
-
 function openDropdownMenu() {
   document
     .querySelector(".menu-dropdown")

@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Examination work for Frontend course: Design a mobile responsive one page portfolio with Figma and code the page."
+    />
     <title>Tina's Porfolio</title>
     <link
       rel="stylesheet"
@@ -14,6 +18,9 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
+      media="print"
+      onload="this.onload=null;this.removeAttribute('media');"
+      fetchpriority="high"
     />
 
     <link rel="stylesheet" href="styles/background.css" />
@@ -24,7 +31,11 @@
     <div class="background-border top-left-border"></div>
     <div class="background-border bottom-right-border"></div>
     <div class="menu-dropdown">
-      <button class="inner-menu-button">
+      <button
+        class="inner-menu-button"
+        aria-label="drop-down-menu"
+        onfocus="closeDropdownMenu()"
+      >
         <i class="bi bi-list menu-icon"></i>
       </button>
       <div class="menu-bottom-comtainer">
@@ -34,16 +45,36 @@
             src="image/profile.jpg"
             alt="Profile picture"
         /></a>
-        <a class="icons-link" href="https://www.google.com/" target="_blank">
+        <a
+          class="icons-link"
+          href="https://www.google.com/"
+          target="_blank"
+          aria-label="Direct to my email"
+        >
           <i class="bi bi-envelope icons-icon"></i
         ></a>
-        <a class="icons-link" href="https://www.google.com/" target="_blank">
+        <a
+          class="icons-link"
+          href="https://www.google.com/"
+          target="_blank"
+          aria-label="Direct to my github"
+        >
           <i class="bi bi-github icons-icon"></i>
         </a>
-        <a class="icons-link" href="https://www.google.com/" target="_blank">
+        <a
+          class="icons-link"
+          href="https://www.google.com/"
+          target="_blank"
+          aria-label="Direct to  my Linkedin"
+        >
           <i class="bi bi-linkedin icons-icon"></i>
         </a>
-        <a class="icons-link" href="https://www.google.com/" target="_blank">
+        <a
+          class="icons-link"
+          href="https://www.google.com/"
+          target="_blank"
+          aria-label="Direct to call my phone number"
+        >
           <i class="bi bi-telephone icons-icon"></i>
         </a>
       </div>
@@ -52,7 +83,10 @@
     <div class="content-container">
       <header>
         <div class="profile-container">
-          <a href=""
+          <a
+            href="https://www.google.com/"
+            target="_blank"
+            aria-label="Direct to my page"
             ><img
               class="profile-picture"
               src="image/profile.jpg"
@@ -60,19 +94,43 @@
           /></a>
         </div>
         <nav>
-          <a class="icons-link" href="https://www.google.com/" target="_blank">
+          <a
+            class="icons-link"
+            href="https://www.google.com/"
+            target="_blank"
+            aria-label="Direct to my email"
+          >
             <i class="bi bi-envelope icons-icon"></i
           ></a>
-          <a class="icons-link" href="https://www.google.com/" target="_blank">
+          <a
+            class="icons-link"
+            href="https://www.google.com/"
+            target="_blank"
+            aria-label="Direct to my github"
+          >
             <i class="bi bi-github icons-icon"></i>
           </a>
-          <a class="icons-link" href="https://www.google.com/" target="_blank">
+          <a
+            class="icons-link"
+            href="https://www.google.com/"
+            target="_blank"
+            aria-label="Direct to  my Linkedin"
+          >
             <i class="bi bi-linkedin icons-icon"></i>
           </a>
-          <a class="icons-link" href="https://www.google.com/" target="_blank">
+          <a
+            class="icons-link"
+            href="https://www.google.com/"
+            target="_blank"
+            aria-label="Direct to call my phone number"
+          >
             <i class="bi bi-telephone icons-icon"></i>
           </a>
-          <button class="menu-button">
+          <button
+            class="menu-button"
+            onfocus="openDropdownMenu()"
+            aria-label="drop-down-menu"
+          >
             <i class="bi bi-list menu-icon"></i>
           </button>
         </nav>
