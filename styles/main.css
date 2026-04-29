@@ -40,7 +40,8 @@ h1 {
   line-height: 2rem;
   border-left: 4px solid transparent;
   padding-right: 60px;
-  background-image: linear-gradient(rgb(39, 41, 50), rgb(39, 41, 50)),
+  background-image:
+    linear-gradient(rgb(39, 41, 50), rgb(39, 41, 50)),
     linear-gradient(to bottom, var(--green) 0%, var(--pink) 100%);
   background-origin: border-box;
   background-clip: padding-box, border-box;
@@ -102,7 +103,8 @@ p {
   .my-info {
     border-left: none;
     border-top: 4px solid transparent;
-    background-image: linear-gradient(rgb(39, 41, 50), rgb(39, 41, 50)),
+    background-image:
+      linear-gradient(rgb(39, 41, 50), rgb(39, 41, 50)),
       linear-gradient(to right, var(--green) 0%, var(--pink) 100%);
     padding: 0;
     margin: 0 20px;

@@ -52,6 +52,11 @@ nav {
 .menu-dropdown {
   display: none;
 }
+.phone-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
 @media only screen and (max-width: 768px) {
   header .profile-picture {
     display: none;
@@ -67,18 +72,23 @@ nav {
 
   .menu-button {
     background-color: var(--background-black);
+    border: none;
     transition: background-color 0.15s;
   }
   .inner-menu-button {
     background-color: transparent;
-    transition: background-color 0.15s;
+    width: 60px;
+    height: 60px;
+    border: none;
   }
   .inner-menu-button:hover {
     background-color: rgba(39, 41, 50, 0.8);
+
+    border-radius: 50%;
   }
 
   .menu-button,
-  .inner-menu-button {
+  .phone-button .inner-menu-button {
     border: none;
     width: 60px;
     height: 60px;

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -19,7 +19,10 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
       media="print"
-      onload="this.onload=null;this.removeAttribute('media');"
+      onload="
+        this.onload = null;
+        this.removeAttribute('media');
+      "
       fetchpriority="high"
     />
 
@@ -39,7 +42,11 @@
         <i class="bi bi-list menu-icon"></i>
       </button>
       <div class="menu-bottom-comtainer">
-        <a href=""
+        <a
+          href="CV Tina Fong.pdf"
+          download
+          target="_blank"
+          aria-label="Direct to my CV"
           ><img
             class="profile-picture"
             src="image/profile.jpg"
@@ -47,7 +54,7 @@
         /></a>
         <a
           class="icons-link"
-          href="https://www.google.com/"
+          href="mailto:tinafongharling@gmail.com?subject=Website Contact&body=Hello Tina,"
           target="_blank"
           aria-label="Direct to my email"
         >
@@ -55,7 +62,7 @@
         ></a>
         <a
           class="icons-link"
-          href="https://www.google.com/"
+          href="https://github.com/sumsumsum6918"
           target="_blank"
           aria-label="Direct to my github"
         >
@@ -63,20 +70,19 @@
         </a>
         <a
           class="icons-link"
-          href="https://www.google.com/"
+          href="https://www.linkedin.com/in/tina-fong-586680324/"
           target="_blank"
           aria-label="Direct to  my Linkedin"
         >
           <i class="bi bi-linkedin icons-icon"></i>
         </a>
-        <a
-          class="icons-link"
-          href="https://www.google.com/"
-          target="_blank"
-          aria-label="Direct to call my phone number"
+        <button
+          class="icons-link phone-button"
+          aria-label="Direct to know my phone number"
+          onclick="copyNumber()"
         >
           <i class="bi bi-telephone icons-icon"></i>
-        </a>
+        </button>
       </div>
     </div>
 
@@ -96,7 +102,7 @@
         <nav>
           <a
             class="icons-link"
-            href="https://www.google.com/"
+            href="mailto:tinafongharling@gmail.com?subject=Website Contact&body=Hello Tina,"
             target="_blank"
             aria-label="Direct to my email"
           >
@@ -104,7 +110,7 @@
           ></a>
           <a
             class="icons-link"
-            href="https://www.google.com/"
+            href="https://github.com/sumsumsum6918"
             target="_blank"
             aria-label="Direct to my github"
           >
@@ -112,20 +118,19 @@
           </a>
           <a
             class="icons-link"
-            href="https://www.google.com/"
+            href="https://www.linkedin.com/in/tina-fong-586680324/"
             target="_blank"
             aria-label="Direct to  my Linkedin"
           >
             <i class="bi bi-linkedin icons-icon"></i>
           </a>
-          <a
-            class="icons-link"
-            href="https://www.google.com/"
-            target="_blank"
-            aria-label="Direct to call my phone number"
+          <button
+            class="icons-link phone-button"
+            aria-label="Direct to know my phone number"
+            onclick="copyNumber()"
           >
             <i class="bi bi-telephone icons-icon"></i>
-          </a>
+          </button>
           <button
             class="menu-button"
             onfocus="openDropdownMenu()"
@@ -150,10 +155,6 @@
                 new expression and designs while providing great user
                 experiences.
               </p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
             </div>
           </div>
           <div class="projects-contianer">
@@ -163,29 +164,38 @@
               <li>
                 <a
                   class="project-link"
-                  href="https://www.google.com/"
+                  href="https://sumsumsum6918.github.io/grade-based-assignment-frontend/"
                   target="_blank"
                 >
-                  YouTube Clone</a
+                  Frontend Project</a
                 >
               </li>
               <li>
                 <a
                   class="project-link"
-                  href="https://www.google.com/"
+                  href="https://sumsumsum6918.github.io/amazon-project/"
                   target="_blank"
                 >
-                  Rock-Paper-Scissors</a
+                  JavaScript Project</a
                 >
               </li>
               <li>
                 <a
                   class="project-link"
-                  href="https://www.google.com/"
+                  href="https://github.com/sumsumsum6918/Inl-mningsuppgift-TechGear-node-express-"
                   target="_blank"
                 >
-                  Calculator</a
+                  Database Project
+                </a>
+              </li>
+              <li>
+                <a
+                  class="project-link"
+                  href="https://github.com/sumsumsum6918/library-system"
+                  target="_blank"
                 >
+                  Spring Boot Project
+                </a>
               </li>
             </ul>
           </div>
